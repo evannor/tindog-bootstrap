@@ -1,33 +1,43 @@
 body {
   font-family: 'Montserrat-Black', sans-serif;
+  text-align: center;
 }
-
-h1 {
-  line-height: 1.5;
-  font-size: 3.5rem;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  padding: 1rem 0;
 }
-
 h2 {
   line-height: 1.5;
   font-size: 3.5rem;
-  font-weight: bold;
 }
-
 h3 {
   font-size: 1.5rem;
-  font-weight: 900;
 }
-
 button {
   margin: 5% 3% 5% 0;
 }
+nav {
+  font-size: 1.25rem;
+}
 
-#title {
+/* Utilities */
+.row {
+  margin-top: 3rem;
+}
+.container {
+  padding: 10% 1%;
+}
+.colored-section {
   background: #ff4c68;
   color: #fff;
+}
+.white-section {
+  background: #fff;
+}
+
+/* Title Section */
+#title {
   overflow: hidden;
+  text-align: left;
 }
 /* Rotate and Translate Img */
 #title img {
@@ -37,8 +47,15 @@ button {
   position: absolute;
   right: 30%;
 }
+.title {
+  line-height: 1.5;
+  font-size: 3.5rem;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+/* Features Section */
 #features {
-  background: #fff;
   position: relative;
   z-index: 1;
 }
@@ -46,51 +63,33 @@ button {
   color: #8f8f8f;
 }
 
-#pricing {
-  text-align: center;
-}
+/* Pricing Section */
 #pricing button {
   margin-left: 10.5px;
 }
-/* Centers container contents */
-.container-fluid {
-  padding: 3% 15% 7%;
-}
 
 /* NavBar */
-nav {
-  font-size: 1.25rem;
+/* Centers container contents Nav Bar */
+.container-fluid {
+  padding: 3% 15% 7%;
+  height: 100%;
 }
-
 .navbar {
   padding-left: 0;
   padding-bottom: 4.5rem;
 }
-
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
 }
-
 .nav-item {
   padding: 0 1.5rem;
 }
-
 .nav-link {
   font-family: 'Montserrat-Light', sans-serif;
   font-size: 1.2rem;
 }
-
-/* Title */
-.container-fluid {
-  height: 100%;
-}
-
-.row {
-  margin-top: 3rem;
-}
-
 
 /* Features- grid area*/
 .fas {
@@ -100,16 +99,14 @@ nav {
 .fas:hover {
   color: #ff4c68;
 }
-
 .feature {
-  text-align: center;
   /* push text onto 2 lines */
   padding: 5%;
   margin: 3.5rem 0;
 }
 
+/* Testimonials */
 #testimonials {
-  text-align: center;
   background: #ef8172;
   color: #fff;
 }
@@ -118,12 +115,10 @@ nav {
   border-radius: 50%;
   margin: 1.6rem;
 }
-.container {
-  padding: 10% 1%;
-}
+
+/* Press */
 #press {
   background: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 #press img {
@@ -131,12 +126,7 @@ nav {
   margin: 1.2rem 1.2rem 3.2rem;
 }
 
-#cta {
-  background: #ff4c68;
-  text-align: center;
-  color: #fff;
-  font-family: 'Montserrat-Black', sans-serif;
-}
+/* Call To Action */
 #cta h3 {
   font-size: 3rem;
 }
@@ -144,16 +134,15 @@ nav {
   padding-bottom: 8rem;
 }
 
+/* Footer */
 #footer {
-  background: #fff;
-  text-align: center;
   color: #8f8f8f;
   padding: 3rem 0;
 }
 #footer .fas,
 #footer .fab {
   color: #000;
-  margin: .75rem;
+  margin: 0.75rem;
 }
 #footer p {
   margin-top: 0.75rem;
